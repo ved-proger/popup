@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Модальное Окно</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container header__container">
+				<nav class="menu">
+					<ul class="menu__body">
+						<li class="menu__item"><a class="popup-link" href="#popup1">item_1</a></li>
+						<li class="menu__item"><a class="popup-link" href="#popup2">item_2</a></li>
+						<li class="menu__item"><a class="popup-link" href="#popup3">item_3</a></li>
+						<li class="menu__item"><a href="#">item_4</a></li>
+						<li class="menu__item"><a href="#">item_5</a></li>
+					</ul>
+				</nav>
+				<a href="#popup" class="btn popup-link">call back</a>
+			</div>
+		</header>
+		<div class="section">
+			<div class="section__content">
+				<div class="section__container">
+					<div class="section__body">
+						<h1 class="section__title">Интересный случай. Выход за пределы контейнера</h1>
+						<div class="section__text">Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Unde maxime nihil eaque, cumque est ipsam exercitationem, cum earum quas similique voluptates, ex qui dolor at, necessitatibus. Necessitatibus iste, asperiores ab.</div>
+					</div>
+				</div>
+			</div>
+			<div class="section__image">
+				<a href="#image" class="popup-link">
+					<img src="img/bg1.jpg" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+	<div id="popup" class="popup">
+		<div class="popup__body">
+			<div class="popup__content">
+				<button type="button" class="popup__close popup-close">x</button>
+				<div class="popup__title">modal window</div>
+				<div class="popup__text"><a href="#popup_4" class="popup-link">popup 4 </a>Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Officiis quos mollitia praesentium sunt cum quisquam porro, neque quia officia corrupti, deleniti nemo nulla modi harum delectus, alias adipisci a eligendi.</div>
+			</div>
+		</div>
+	</div>
+	<div id="popup_4" class="popup">
+		<div class="popup__body">
+			<div class="popup__content">
+				<button type="button" class="popup__close popup-close">x</button>
+				<div class="popup__title">modal window 4</div>
+				<div class="popup__text">Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Officiis quos mollitia praesentium sunt cum quisquam porro, neque quia officia corrupti, deleniti nemo nulla modi harum delectus, alias adipisci a eligendi.</div>
+			</div>
+		</div>
+	</div>
+	<div id="image" class="popup">
+		<div class="popup__body">
+			<div class="popup__content popup__content_image">
+				<button type="button" class="popup__close popup-close">x</button>
+				<div class="popup__image">
+					<img src="img/bg1.jpg" alt="">
+				</div>
+			</diev>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>	
